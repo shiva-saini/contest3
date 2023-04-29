@@ -1,0 +1,201 @@
+/* header is created using bootstrap */
+
+/* carousal is created using bootstrap */
+
+
+
+/* style for tha main div of first section */
+/* .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* this is the inner box of main div  inside this section we will create 3 divs*/
+.section{
+    /* for creating grid of 3 elements */
+    /* display: grid;  */
+    display: flex;
+    justify-content: space-around;
+    /* this is for giving gap between ths elements about x axis */
+    column-gap:50px;
+    /* this is for giving gap between ths elements about y axis   */
+    /* row-gap: 10px; */
+    /* template that tells that this is a grid with auto adjustable  */
+    /* grid-template-columns: auto auto auto; */
+    /* background-color: #2196F3; */
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+
+
+
+/* code for making the site responsive */
+@media (max-width: 700px) {
+    .section{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousal{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .parent-card{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+/* .carousal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+.section .inside{
+    /* border: 1px solid black; */
+    /* this is used for giving the shadow for each and every element */
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    /* when we use child positon absolute we give parent position as relative */
+    position: relative;
+    /* gap between elements around x axis */
+    gap:10px;
+}
+
+
+.section .inside img{
+
+    height: 200px;
+    width: 333px;
+}
+
+
+.description{
+    position: absolute;
+    top: 135px;
+    left: 65px;
+}
+
+
+.grid-container{
+    display: grid;
+    column-gap:50px;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+.grid-item .grid-img{
+    height: 200px;
+    width: 300px;
+}
+
+.item{
+    display: flex;
+    /* it will flex all the elements around y axis */
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+}
+
+.item span{
+    font-weight: 600;
+}
+
+
+/* .main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 329px;
+    height: 200px;
+}
+.main-card .card img{
+    width: 320px;
+    height: 200px;
+}
+
+
+.card-body{
+    width: 320px;
+    height: 200px;
+} */
+
+.parent-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent-card .card{
+    width: 317px;
+}
+
+
+.b{
+    margin-left: 762px;
+}
